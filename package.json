@@ -1,6 +1,6 @@
 {
     "name": "mincolor",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "A little library to handle web colors",
     "main": "index.js",
     "scripts": {
@@ -31,5 +31,7 @@
         "chai": "*",
         "mocha": "*"
     },
-    "homepage": "https://github.com/rodrigopolo/mincolor#readme"
+    "homepage": "https://github.com/rodrigopolo/mincolor#readme",
+    "readmeFilename": "README.md",
+    "readme": "minColor\n=========\n\nA little library to handle web colors\n\n## Installation\n\n  npm install mincolor --save\n\n## Usage\n\n```javascript\n// Require the main script in this thir, you should use require('mincolor')\nvar mincolor = require('mincolor');\n\n\n// Simple object creation:\nvar color = mincolor('ffffff');\n\n// Creation using hash:\nvar color = mincolor('#FFFFFF');\n\n// Creation from shorthand:\nvar color = mincolor('#FFF');\n\n// Creation from RGB array:\nvar color = mincolor([255,255,255]);\n\n// Creation from decimal:\nvar color = mincolor(16777215);\n\n// Creation from other color object:\nvar color2 = mincolor(color);\n\n// Returns a hex color string, a hex() alias #000000-#FFFFFF:\nconsole.log(color.toString());\n\n// Object cloning:\nvar other_color = color.clone();\n\n// Clone and create a new color with a web safe color:\nvar web_safe = color.webSafe();\n\n// Blend two colors:\nvar background = mincolor('#ffffff');\nconsole.log(background.blend('#000000',.5).toString());\n\n// Returns a RGB array [255,255,255]:\nconsole.log(color.rgbArray());\n\n// Returns a RGB object {r:255,g:255,b:255}:\nconsole.log(color.rgb());\n\n// Return a short hand hex #000-#FFF:\nvar color = mincolor('f0f0f0');\nconsole.log(color.shortHand());\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) by Rodrigo Polo http://RodrigoPolo.com\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE."
 }
