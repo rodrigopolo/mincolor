@@ -1,0 +1,35 @@
+{
+    "name": "mincolor",
+    "version": "1.0.0",
+    "description": "A little library to handle web colors",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rodrigopolo/mincolor.git"
+    },
+    "keywords": [
+        "web",
+        "color",
+        "rgb",
+        "hex",
+        "dec",
+        "blend",
+        "shorthand"
+    ],
+    "author": "Rodrigo Polo <rodrigo.polo@gmail.com> (http://rodrigopolo.com)",
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }],
+    "bugs": {
+        "url": "https://github.com/rodrigopolo/mincolor/issues"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "mocha": "*"
+    },
+    "homepage": "https://github.com/rodrigopolo/mincolor#readme"
+}
